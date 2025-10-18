@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
+    <div style="position: absolute; top: 10px; right: 20px;">
+      <button id="tagBtn" onclick="toggleTags()" style="font-size:1.5rem; background:none; border:none; cursor:pointer;">⋮</button>
+      <div id="tagList" style="display:none; position:absolute; right:0; background:#fff; border:1px solid #ccc; box-shadow:0 2px 5px rgba(0,0,0,0.2); min-width:150px;">
+        <a href="#about-me" style="display:block; padding:8px 12px; text-decoration:none; color:#000;">About Me</a>
+        <a href="#research-interests" style="display:block; padding:8px 12px; text-decoration:none; color:#000;">Research</a>
+        <a href="#news" style="display:block; padding:8px 12px; text-decoration:none; color:#000;">News</a>
+        <a href="#publications" style="display:block; padding:8px 12px; text-decoration:none; color:#000;">Publications</a>
+        <a href="#services" style="display:block; padding:8px 12px; text-decoration:none; color:#000;">Services</a>
+      </div>
+    </div>
     <title>Han ZHANG | City University of Hong Kong</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,19 +29,7 @@
     <link rel="stylesheet" href="./assets/css/publications.css">
   </head>
   
-  <body>
-    
-    <div class="collapsible-container">
-      <button class="collapsible">☰ Navigate</button>
-      <div class="content">
-        <button onclick="scrollToSection('about-me')">About Me</button>
-        <button onclick="scrollToSection('research-interests')">Research</button>
-        <button onclick="scrollToSection('news')">News</button>
-        <button onclick="scrollToSection('publications')">Publications</button>
-        <button onclick="scrollToSection('services')">Services</button>
-      </div>
-    </div>
-    
+  <body>    
     <div class="wrapper">
       <header>
         <a class="image avatar"><img src="./assets/img/Han_s_photo.jpg" alt="avatar" /></a>
