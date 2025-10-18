@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
-    <div style="position: absolute; top: 10px; right: 20px;">
-      <button id="tagBtn" onclick="toggleTags()" style="cursor: pointer;">...</button>
-      <div id="tagList" style="display:none; position:absolute; right:0; background:#fff; border:1px solid #ccc; box-shadow:0 2px 5px rgba(0,0,0,0.2);">
-        <a href="#about-me" style="display:block; padding:5px 10px; text-decoration:none;">About Me</a>
-        <a href="#research-interests" style="display:block; padding:5px 10px; text-decoration:none;">Research</a>
-        <a href="#news" style="display:block; padding:5px 10px; text-decoration:none;">News</a>
-        <a href="#publications" style="display:block; padding:5px 10px; text-decoration:none;">Publications</a>
-        <a href="#services" style="display:block; padding:5px 10px; text-decoration:none;">Services</a>
+    <div class="collapsible-container">
+      <button class="collapsible">☰ Navigate</button>
+      <div class="content">
+        <button onclick="scrollToSection('about')">About Me</button>
+        <button onclick="scrollToSection('research')">Research</button>
+        <button onclick="scrollToSection('news')">News</button>
+        <button onclick="scrollToSection('publications')">Publications</button>
+        <button onclick="scrollToSection('services')">Services</button>
       </div>
     </div>
 
