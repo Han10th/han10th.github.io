@@ -144,7 +144,7 @@ footer { width: 232px; float: left; position: fixed; bottom: 30px; -webkit-font-
 
 @media print, screen and (max-width: 960px) { 
   .pub-row { display: flex; align-items: center; }
-  .tag-button { font-size: 1rem; }
+  .tag-button { font-size: 0.1rem; }
   div.wrapper { width: auto; margin: 0; }
   header, section, footer { float: none; position: static; width: auto; }
   header { padding-right: 320px; }
