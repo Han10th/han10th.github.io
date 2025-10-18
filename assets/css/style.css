@@ -143,8 +143,8 @@ hr { border: 0; background: #e5e5e5; height: 1px; margin: 0 0 20px; }
 footer { width: 232px; float: left; position: fixed; bottom: 30px; -webkit-font-smoothing: subpixel-antialiased; text-align: center; }
 
 @media print, screen and (max-width: 960px) { 
-  .pub-row { display: flex; align-items: center; }
   .tag-button { font-size: 2px; }
+  .pub-row { display: flex; align-items: center; }
   div.wrapper { width: auto; margin: 0; }
   header, section, footer { float: none; position: static; width: auto; }
   header { padding-right: 320px; }
@@ -155,6 +155,7 @@ footer { width: 232px; float: left; position: fixed; bottom: 30px; -webkit-font-
   #head1o2 { visibility: hidden; }
   #head2o2 { visibility: hidden; } }
 @media print, screen and (max-width: 960px) { 
+  .tag-button { font-size: 2px; }
   body { word-wrap: break-word; padding: 15px; }
   .pub-row { display: flex; align-items: center; }
   header { padding: 0; }
