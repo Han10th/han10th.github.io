@@ -28,6 +28,28 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/publications.css">
   </head>
+
+  <script>
+  function loadHTML(id, file) {
+    fetch(file)
+      .then(response => {
+        if (!response.ok) {
+          throw new Error("Failed to load " + file);
+        }
+        return response.text();
+      })
+      .then(data => {
+        document.getElementById(id).innerHTML = data;
+      })
+      .catch(error => {
+        document.getElementById(id).innerHTML = "Error loading content.";
+        console.error(error);
+      });
+  }
+
+  // load publications
+  loadHTML("publications-container", "publications.html");
+  </script>
   
   <body>    
     <div class="wrapper">
@@ -73,11 +95,12 @@
           <li><strong>[May 2025]</strong> Visit Prof.  <a href="https://scholar.google.co.il/citations?user=ISRNX3gAAAAJ&hl=en">Guillermo Sapiro</a> at Princeton University for 6 months.</li>
           <li><strong>[June 2024]</strong> New website launched!!!</li>
         </ul>
-      <h2 id="publications_journal" style="margin: 0px 0px -15px;">Journal Publication</h2>
-        <iframe src="publications_journal.html" width="100%" style="border:none;"></iframe>
+
+      <h2 id="publications_journal">Publications Journal</h2>
+        <div id="publications-container">Loading publications...</div>
       
-      <h2 id="publications_proceeding" style="margin: 0px 0px -15px;">Proceeding Publication</h2>
-        <iframe src="publications_proceeding.html" width="100%" style="border:none;"></iframe>
+      <h2 id="publications_proceeding">Publications Proceeding</h2>
+        <div id="publications-container">Loading publications...</div>
 
         
         <h2 id="services">Services</h2>
