@@ -1,1 +1,34 @@
-
+        <h2 id="publications" style="margin: 0px 0px -15px;">Proceeding Publication</h2>
+        <div class="publications">
+          <ol class="bibliography">
+            
+            <li>
+              <div class="pub-row">
+                <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 0px;">
+                  <div class="title">Fast Physics-Informed Learning via Diffusion Hypernetworks</div>
+                  <div class="author">Yuzhou Zhao, <strong>Han Zhang</strong>, J. Matias Di Martino, Jean-Michel Morel, Guillermo Sapiro</div>
+                  <div class="periodical"><em> Submitted <strong>(XXXX)</strong>, 2025</em>      
+                  </div>              
+                  <div class="links">
+                    <a href="https://han10th.github.io/" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">NA</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            
+            <li>
+              <div class="pub-row">
+                <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 0px;">
+                  <div class="title">Nondeterministic Deformation analysis using Quasiconformal Geometry</div>
+                  <div class="author"><strong>Han Zhang</strong>, Lok Ming Lui</div>
+                  <div class="periodical"><em>IEEE International Conference on Image Processing <strong>(ICIP)</strong>, 2022.</em>
+                  </div>
+                  <div class="links">
+                    <a href="https://ieeexplore.ieee.org/document/9897199" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Pub</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            
+          </ol>
+        </div>
